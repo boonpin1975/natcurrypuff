@@ -1,0 +1,159 @@
+/* Nat Home Made Curry Puff Custom Styles */
+
+/* Custom Smooth Scrolling & Aesthetics */
+html {
+  scroll-behavior: smooth;
+  font-family: 'Outfit', sans-serif;
+}
+
+::selection {
+  background-color: #f59e0b;
+  color: #ffffff;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #faf6f0;
+}
+::-webkit-scrollbar-thumb {
+  background: #d97706;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b45309;
+}
+
+/* Golden Gradient Animations */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(245, 158, 11, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(245, 158, 11, 0.7);
+  }
+}
+
+.glow-golden {
+  animation: pulseGlow 3s infinite ease-in-out;
+}
+
+/* Subtle Floating Animation */
+@keyframes floatUp {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-float {
+  animation: floatUp 4s ease-in-out infinite;
+}
+
+/* Spiral Rotation Animation for Hover */
+.spiral-spin {
+  transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.spiral-spin:hover {
+  transform: rotate(180deg) scale(1.1);
+}
+
+/* Interactive Anatomy Section Styling */
+.layer-card {
+  transition: all 0.25s ease-in-out;
+}
+
+.layer-card:hover {
+  transform: translateX(4px);
+}
+
+.layer-card.active {
+  border-color: #f59e0b !important;
+  background-color: rgba(69, 26, 3, 0.6) !important;
+  box-shadow: 0 10px 25px -5px rgba(245, 158, 11, 0.25);
+}
+
+/* FAQ Accordion Styling */
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, opacity 0.2s ease-out;
+  opacity: 0;
+}
+
+.faq-item.open .faq-content {
+  max-height: 250px;
+  opacity: 1;
+}
+
+.faq-item.open .faq-btn i {
+  transform: rotate(180deg);
+}
+
+/* Toast Notification for Crunch Sound and Address Copy */
+.toast-notice {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  z-index: 100;
+  background: #1c1917;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 9999px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid #f59e0b;
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.toast-notice.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Crumb Particle Animation */
+.crumb-particle {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  border-radius: 50%;
+  animation: crumbFly 0.9s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes crumbFly {
+  0% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--tx), var(--ty)) scale(0.3) rotate(var(--rot));
+    opacity: 0;
+  }
+}
+
+/* Day trip itinerary step cards */
+.itinerary-step {
+  position: relative;
+}
+.itinerary-step:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 48px;
+  bottom: -20px;
+  width: 2px;
+  background: #fde68a;
+}
+
+

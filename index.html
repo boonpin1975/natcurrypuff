@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nat Home Made Curry Puff | Traditional Karipap Pusing in Balik Pulau, Penang</title>
+  <meta name="description" content="Artisanal Karipap Pusing (spiral-layered curry puffs) handcrafted in Balik Pulau, Penang Island. 100% farm-fresh potatoes, aromatic Malaysian spices, shatteringly flaky crust.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            amber: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              200: '#fde68a',
+              300: '#fcd34d',
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+              800: '#92400e',
+              900: '#78350f',
+            },
+            curry: {
+              spice: '#c2410c',
+              leaf: '#15803d',
+              leafLight: '#22c55e',
+              warmParchment: '#FFFDF9',
+              crustDark: '#451a03',
+              crustGold: '#EAA221',
+              charcoal: '#1c1917',
+              surface: '#FFF9F0'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Outfit"', 'sans-serif'],
+          },
+          boxShadow: {
+            'golden': '0 10px 30px -5px rgba(217, 119, 6, 0.25)',
+            'golden-lg': '0 20px 40px -10px rgba(217, 119, 6, 0.35)',
+            'inner-glow': 'inset 0 2px 4px 0 rgba(255, 255, 255, 0.3)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#FAF6F0] text-stone-800 font-sans antialiased selection:bg-amber-500 selection:text-white">
+
+  <!-- TOP ANNOUNCEMENT BANNER -->
+  <div class="bg-gradient-to-r from-amber-700 via-amber-600 to-amber-700 text-amber-50 px-4 py-2 text-xs md:text-sm font-medium">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2 mx-auto md:mx-0">
+        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold bg-amber-400 text-stone-900 animate-pulse">
+          LIVE FROM BALIK PULAU
+        </span>
+        <span>🍳 Next Fresh Batch frying at 170°C: <strong id="countdown-timer" class="font-bold underline">14m 20s</strong></span>
+      </div>
+      <div class="hidden md:flex items-center gap-4 text-amber-100 text-xs">
+        <span>📍 Balik Pulau, Penang</span>
+        <span>•</span>
+        <span>🕒 Pre-orders recommended before 2:00 PM</span>
+        <span>•</span>
+        <a href="#order-calculator" class="text-white underline hover:text-amber-200 transition">Reserve Your Box &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar" class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-amber-100 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-3 group">
+          <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-amber-600 to-amber-400 p-0.5 shadow-md group-hover:scale-105 transition-transform">
+            <div class="w-full h-full bg-[#FFFDF9] rounded-full flex items-center justify-center">
+              <span class="text-2xl transform group-hover:rotate-45 transition-transform duration-500">🌀</span>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center gap-1.5">
+              <span class="font-serif font-bold text-2xl tracking-tight text-stone-900 group-hover:text-amber-700 transition">Nat's</span>
+              <span class="text-xs uppercase tracking-widest font-bold bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full">Artisanal</span>
+            </div>
+            <p class="text-xs text-stone-500 font-medium tracking-wide">Karipap Pusing • Balik Pulau</p>
+          </div>
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="#story" class="text-sm font-semibold text-stone-700 hover:text-amber-600 transition">Our Story</a>
+          <a href="#why-special" class="text-sm font-semibold text-stone-700 hover:text-amber-600 transition">Why It's Good</a>
+          <a href="#four-pillars" class="text-sm font-semibold text-stone-700 hover:text-amber-600 transition">The 4 Pillars</a>
+          <a href="#spiral-anatomy" class="text-sm font-semibold text-stone-700 hover:text-amber-600 transition">Spiral Anatomy</a>
+          <a href="#menu-pricing" class="text-sm font-semibold text-stone-700 hover:text-amber-600 transition">Menu & Boxes</a>
+          <a href="#reheat-guide" class="text-sm font-semibold text-stone-700 hover:text-amber-600 transition">Crunch Care</a>
+          <a href="#contact" class="text-sm font-semibold text-stone-700 hover:text-amber-600 transition">Find Us</a>
+        </div>
+
+        <!-- Action CTA -->
+        <div class="hidden sm:flex items-center gap-3">
+          <button id="crunch-audio-btn" class="flex items-center gap-1.5 px-3 py-2 text-xs font-bold text-amber-800 bg-amber-100 hover:bg-amber-200 rounded-full transition cursor-pointer border border-amber-300">
+            <i data-lucide="volume-2" class="w-4 h-4 text-amber-700"></i>
+            <span>Hear The Crunch</span>
+          </button>
+          
+          <a href="#order-calculator" class="flex items-center gap-2 bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-700 hover:to-amber-600 text-white text-sm font-bold px-5 py-2.5 rounded-full shadow-golden hover:shadow-golden-lg transition duration-200">
+            <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+            <span>Order Fresh Box</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="flex items-center gap-2 lg:hidden">
+          <button id="mobile-menu-btn" aria-label="Toggle menu" class="p-2 rounded-lg text-stone-700 hover:bg-stone-100">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-amber-100 bg-white px-4 pt-3 pb-6 space-y-3">
+      <a href="#story" class="block px-3 py-2 rounded-md font-medium text-stone-700 hover:bg-amber-50">Our Balik Pulau Story</a>
+      <a href="#why-special" class="block px-3 py-2 rounded-md font-medium text-stone-700 hover:bg-amber-50">Why Our Puffs Are Unbelievably Good</a>
+      <a href="#four-pillars" class="block px-3 py-2 rounded-md font-medium text-stone-700 hover:bg-amber-50">The 4 Golden Pillars</a>
+      <a href="#spiral-anatomy" class="block px-3 py-2 rounded-md font-medium text-stone-700 hover:bg-amber-50">Crust Anatomy & Micro-layers</a>
+      <a href="#menu-pricing" class="block px-3 py-2 rounded-md font-medium text-stone-700 hover:bg-amber-50">Box Sizes & Pricing</a>
+      <a href="#reheat-guide" class="block px-3 py-2 rounded-md font-medium text-stone-700 hover:bg-amber-50">How to Reheat & Keep Crunchy</a>
+      <a href="#contact" class="block px-3 py-2 rounded-md font-medium text-stone-700 hover:bg-amber-50">Pickup Location</a>
+      
+      <div class="pt-2 flex flex-col gap-2">
+        <button id="mobile-crunch-btn" class="w-full flex items-center justify-center gap-2 py-2.5 bg-amber-100 text-amber-900 rounded-xl font-bold text-sm">
+          <i data-lucide="volume-2" class="w-4 h-4"></i>
+          <span>Play Crunch Sound Effect</span>
+        </button>
+        <a href="#order-calculator" class="w-full flex items-center justify-center gap-2 py-3 bg-amber-600 text-white rounded-xl font-bold text-sm shadow-md">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>Build WhatsApp Order</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="relative overflow-hidden pt-8 pb-20 lg:pt-16 lg:pb-28">
+    <!-- Background Decor Elements -->
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-amber-300/30 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute top-1/2 -left-32 w-80 h-80 bg-orange-400/20 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Column: Story & Hook -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100/80 border border-amber-300 text-amber-900 text-xs font-semibold tracking-wide uppercase">
+            <span class="w-2 h-2 rounded-full bg-amber-600 animate-ping"></span>
+            <span>Balik Pulau, Penang Island • Handcrafted Daily</span>
+          </div>
+
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-extrabold text-stone-900 leading-[1.15] tracking-tight">
+            Shatteringly Flaky. <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-700 via-amber-600 to-orange-600">
+              Micro-Layered Karipap Pusing.
+            </span>
+          </h1>
+
+          <p class="text-lg sm:text-xl text-stone-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            In the scenic hill town of <strong>Balik Pulau</strong> on Penang Island, we craft traditional spiral-layered curry puffs with 100% passion, farm-fresh ingredients, and time-honored Asian pastry techniques.
+          </p>
+
+          <!-- Key highlights badges -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 py-2">
+            <div class="bg-white p-3 rounded-2xl border border-amber-100 shadow-sm flex flex-col items-center lg:items-start">
+              <span class="text-xl">🥔</span>
+              <span class="font-bold text-xs text-stone-900 mt-1">100% Farm Russet</span>
+              <span class="text-[11px] text-stone-500">5mm Hand-Diced</span>
+            </div>
+            <div class="bg-white p-3 rounded-2xl border border-amber-100 shadow-sm flex flex-col items-center lg:items-start">
+              <span class="text-xl">🌿</span>
+              <span class="font-bold text-xs text-stone-900 mt-1">Pecah Minyak</span>
+              <span class="text-[11px] text-stone-500">Fresh Spices & Leaves</span>
+            </div>
+            <div class="bg-white p-3 rounded-2xl border border-amber-100 shadow-sm flex flex-col items-center lg:items-start">
+              <span class="text-xl">🌀</span>
+              <span class="font-bold text-xs text-stone-900 mt-1">Karipap Pusing</span>
+              <span class="text-[11px] text-stone-500">8-Hour Crunch Proof</span>
+            </div>
+            <div class="bg-white p-3 rounded-2xl border border-amber-100 shadow-sm flex flex-col items-center lg:items-start">
+              <span class="text-xl">🍳</span>
+              <span class="font-bold text-xs text-stone-900 mt-1">Fresh at 170°C</span>
+              <span class="text-[11px] text-stone-500">Never Frozen</span>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+            <a href="#order-calculator" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 text-white font-bold text-base shadow-golden-lg hover:shadow-golden hover:scale-[1.02] transition-all duration-200 flex items-center justify-center gap-3">
+              <i data-lucide="package-check" class="w-5 h-5"></i>
+              <span>Pre-Order Today's Batch</span>
+            </a>
+
+            <a href="#spiral-anatomy" class="w-full sm:w-auto px-7 py-4 rounded-full bg-white text-stone-800 hover:text-amber-700 font-bold text-base border border-stone-200 hover:border-amber-400 shadow-sm hover:shadow transition-all flex items-center justify-center gap-2">
+              <i data-lucide="sparkles" class="w-4 h-4 text-amber-500"></i>
+              <span>See the Spiral Science</span>
+            </a>
+          </div>
+
+          <!-- Social Proof / Penang Heritage Note -->
+          <div class="flex items-center justify-center lg:justify-start gap-4 pt-4 text-xs text-stone-500">
+            <div class="flex -space-x-2">
+              <div class="w-8 h-8 rounded-full bg-amber-200 border-2 border-white flex items-center justify-center text-xs font-bold text-amber-900">BP</div>
+              <div class="w-8 h-8 rounded-full bg-orange-200 border-2 border-white flex items-center justify-center text-xs font-bold text-orange-900">PG</div>
+              <div class="w-8 h-8 rounded-full bg-amber-400 border-2 border-white flex items-center justify-center text-xs font-bold text-stone-900">★</div>
+            </div>
+            <div class="text-left">
+              <div class="flex items-center text-amber-500">
+                ★★★★★ <span class="ml-1 font-bold text-stone-800 text-xs">4.9 / 5</span>
+              </div>
+              <span>Loved by Penangites, food lovers & day trippers to Balik Pulau</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Visual Showcase Card -->
+        <div class="lg:col-span-5">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            
+            <!-- Main Hero Visual Card -->
+            <div class="relative rounded-3xl bg-gradient-to-b from-amber-50 via-white to-amber-100/60 p-6 sm:p-8 shadow-2xl border border-amber-200/80 overflow-hidden">
+              
+              <!-- Floating Stamp Badge -->
+              <div class="absolute -top-1 -right-1 bg-amber-600 text-white text-[10px] uppercase font-black px-4 py-1.5 rounded-bl-2xl shadow-md tracking-widest">
+                Penang Island Made
+              </div>
+
+              <!-- Interactive Visual Presentation -->
+              <div class="relative w-full aspect-square rounded-2xl bg-gradient-to-tr from-amber-700 via-amber-600 to-yellow-500 p-1 shadow-inner flex items-center justify-center overflow-hidden group">
+                
+                <!-- Stylized Spiral Puff Graphic with SVG & animation -->
+                <div class="relative w-full h-full bg-stone-900 rounded-[14px] flex flex-col items-center justify-center p-6 text-center overflow-hidden">
+                  
+                  <!-- Golden Glow Background -->
+                  <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-amber-500/30 via-stone-900 to-stone-950"></div>
+                  
+                  <!-- Spiral Puff SVG Art -->
+                  <div class="relative z-10 w-44 h-44 sm:w-52 sm:h-52 transform transition-transform duration-700 group-hover:scale-105">
+                    <svg viewBox="0 0 200 200" class="w-full h-full drop-shadow-[0_15px_25px_rgba(245,158,11,0.45)]">
+                      <defs>
+                        <radialGradient id="crustGrad" cx="50%" cy="50%" r="50%" fx="30%" fy="30%">
+                          <stop offset="0%" stop-color="#FDE68A"/>
+                          <stop offset="40%" stop-color="#F59E0B"/>
+                          <stop offset="75%" stop-color="#D97706"/>
+                          <stop offset="100%" stop-color="#78350F"/>
+                        </radialGradient>
+                        <radialGradient id="spiralLayer" cx="45%" cy="45%" r="50%">
+                          <stop offset="0%" stop-color="#FEF3C7"/>
+                          <stop offset="60%" stop-color="#D97706"/>
+                          <stop offset="100%" stop-color="#451A03"/>
+                        </radialGradient>
+                      </defs>
+                      <!-- Puff Crescent Body -->
+                      <path d="M 25 110 C 25 50, 75 20, 140 30 C 180 35, 185 85, 175 125 C 165 165, 120 185, 70 175 C 35 170, 25 140, 25 110 Z" fill="url(#crustGrad)" stroke="#B45309" stroke-width="2.5" />
+                      
+                      <!-- Pusing Spirals (Micro-layers concentric swirls) -->
+                      <path d="M 100 100 Q 120 70, 145 75 Q 165 80, 160 110 Q 150 145, 115 150 Q 80 150, 65 120 Q 55 90, 80 65 Q 110 45, 140 55" fill="none" stroke="#FEF3C7" stroke-width="3" stroke-linecap="round" opacity="0.9" />
+                      <path d="M 105 105 Q 125 85, 140 90 Q 155 100, 145 125 Q 135 140, 110 140 Q 85 140, 80 115 Q 75 95, 95 80" fill="none" stroke="#FDE68A" stroke-width="2.5" stroke-linecap="round" opacity="0.8" />
+                      <path d="M 108 108 Q 120 95, 130 102 Q 138 112, 128 125 Q 115 130, 105 120" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.95" />
+                      
+                      <!-- Hand-crimped edge (Tali Pilin) -->
+                      <g fill="#F59E0B" stroke="#92400E" stroke-width="1.5">
+                        <circle cx="28" cy="115" r="5" />
+                        <circle cx="34" cy="130" r="5" />
+                        <circle cx="44" cy="144" r="5" />
+                        <circle cx="58" cy="157" r="5" />
+                        <circle cx="75" cy="168" r="5" />
+                        <circle cx="94" cy="173" r="5" />
+                        <circle cx="114" cy="172" r="5" />
+                        <circle cx="134" cy="165" r="5" />
+                        <circle cx="152" cy="152" r="5" />
+                        <circle cx="166" cy="135" r="5" />
+                      </g>
+                    </svg>
+                  </div>
+
+                  <!-- Interactive Crunch Ripple Effect -->
+                  <div class="relative z-10 mt-3">
+                    <span class="inline-block text-amber-300 font-serif font-bold text-lg tracking-wide">Handcrafted Spiral Wonder</span>
+                    <p class="text-xs text-amber-200/80">Double-dough rolling technique • 8-hour crunch</p>
+                  </div>
+
+                  <!-- Quick Sound Test Trigger -->
+                  <button id="card-crunch-btn" class="relative z-10 mt-3 px-3 py-1 bg-amber-500/20 hover:bg-amber-500/40 text-amber-300 border border-amber-400/30 rounded-full text-xs font-semibold flex items-center gap-1.5 transition">
+                    <i data-lucide="volume-2" class="w-3.5 h-3.5 text-amber-400"></i>
+                    <span>Tap to hear the spiral crunch</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Quick Status Footer under the Card -->
+              <div class="mt-5 grid grid-cols-3 gap-2 text-center pt-2 border-t border-amber-200">
+                <div>
+                  <div class="text-base font-extrabold text-amber-800">170°C</div>
+                  <div class="text-[10px] text-stone-500 font-semibold uppercase">Flash-Fried</div>
+                </div>
+                <div class="border-x border-amber-200">
+                  <div class="text-base font-extrabold text-amber-800">5mm</div>
+                  <div class="text-[10px] text-stone-500 font-semibold uppercase">Potato Cubes</div>
+                </div>
+                <div>
+                  <div class="text-base font-extrabold text-amber-800">0% Meat</div>
+                  <div class="text-[10px] text-stone-500 font-semibold uppercase">100% Pure Spices</div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Floating mini badge -->
+            <div class="absolute -bottom-5 -left-5 bg-white rounded-2xl p-3 shadow-xl border border-amber-200 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-amber-100 flex items-center justify-center text-amber-700">
+                <i data-lucide="timer" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-stone-900">Crunch Guarantee</p>
+                <p class="text-[11px] text-stone-500">Stays crispy up to 8 hours</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY STRIP: BALIK PULAU ROOTS -->
+  <section id="story" class="py-16 bg-white border-y border-amber-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <div class="lg:col-span-5 space-y-4">
+          <div class="inline-flex items-center gap-2 text-amber-700 text-xs font-bold uppercase tracking-wider">
+            <i data-lucide="map-pin" class="w-4 h-4"></i>
+            <span>Balik Pulau Heritage</span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900">
+            Tucked Away Behind Penang's Emerald Hills
+          </h2>
+          <p class="text-stone-600 leading-relaxed text-sm sm:text-base">
+            Balik Pulau literally means <em>"the other side of the island."</em> Far from the frantic city rush, it is a sanctuary of lush tropical fruit orchards, sleepy fishing villages, and tranquil breezes.
+          </p>
+          <p class="text-stone-600 leading-relaxed text-sm sm:text-base">
+            Here, cooking isn't rushed. We hold on tightly to the traditional, meticulous pastry-making heritage that mass-production bakeries abandoned long ago. Every single curry puff from Nat's kitchen is rolled, layered, and filled by hand with 100% heart.
+          </p>
+          <div class="pt-2 flex items-center gap-4 text-xs font-semibold text-amber-800">
+            <span class="flex items-center gap-1.5"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> No Commercial Pre-mixes</span>
+            <span class="flex items-center gap-1.5"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Hand-crimped Tali Pilin</span>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            
+            <div class="bg-[#FFFDF9] rounded-2xl p-5 border border-amber-200/70 shadow-sm hover:shadow-md transition">
+              <div class="w-10 h-10 rounded-xl bg-amber-100 flex items-center justify-center text-amber-700 mb-3">
+                <i data-lucide="heart-handshake" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-serif font-bold text-lg text-stone-900">100% Passion</h3>
+              <p class="text-xs text-stone-600 mt-2 leading-relaxed">
+                From morning potato peeling to the late afternoon final fry, each puff represents generational love for authentic Malaysian pastries.
+              </p>
+            </div>
+
+            <div class="bg-[#FFFDF9] rounded-2xl p-5 border border-amber-200/70 shadow-sm hover:shadow-md transition">
+              <div class="w-10 h-10 rounded-xl bg-amber-100 flex items-center justify-center text-amber-700 mb-3">
+                <i data-lucide="leaf" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-serif font-bold text-lg text-stone-900">Farm Fresh Daily</h3>
+              <p class="text-xs text-stone-600 mt-2 leading-relaxed">
+                Potatoes arrive unbruised from trusted local growers. Herbs and curry leaves are picked fresh from local garden plots each dawn.
+              </p>
+            </div>
+
+            <div class="bg-[#FFFDF9] rounded-2xl p-5 border border-amber-200/70 shadow-sm hover:shadow-md transition">
+              <div class="w-10 h-10 rounded-xl bg-amber-100 flex items-center justify-center text-amber-700 mb-3">
+                <i data-lucide="award" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-serif font-bold text-lg text-stone-900">Time-Honored Technique</h3>
+              <p class="text-xs text-stone-600 mt-2 leading-relaxed">
+                Mastering the delicate ratio of water dough and oil dough requires patience, temperature intuition, and seasoned fingers.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY OUR CURRY PUFFS ARE SO UNBELIEVABLY GOOD & FRESH (MAIN THEME) -->
+  <section id="why-special" class="py-20 bg-[#FAF6F0] relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+        <span class="inline-block text-xs uppercase tracking-widest font-black text-amber-700 bg-amber-100 px-3.5 py-1 rounded-full">
+          The Secret To Perfection
+        </span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-stone-900">
+          Why Our Curry Puffs Are So Unbelievably Good & Fresh
+        </h2>
+        <p class="text-stone-600 text-base sm:text-lg">
+          We don't cut corners. While others resort to industrial machinery and meat fillers, Nat stays true to four uncompromising culinary standards.
+        </p>
+      </div>
+
+      <!-- THE 4 PILLARS GRID -->
+      <div id="four-pillars" class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+        
+        <!-- Pillar 1: 100% Farm-Fresh Local Potatoes -->
+        <div class="bg-white rounded-3xl p-8 border border-amber-200/80 shadow-md hover:shadow-xl transition-all duration-300 relative group overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-amber-100/50 rounded-bl-[100px] pointer-events-none group-hover:scale-110 transition-transform"></div>
+          
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-16 h-16 rounded-2xl bg-amber-100 flex items-center justify-center text-3xl shadow-sm group-hover:bg-amber-200 transition">
+              🥔
+            </div>
+            <div>
+              <span class="text-xs uppercase font-extrabold text-amber-700 tracking-wider">Pillar 01 • Pure Vegetarian Friendly</span>
+              <h3 class="font-serif text-2xl font-bold text-stone-900">100% Farm-Fresh Local Potatoes</h3>
+              <p class="text-xs font-semibold text-emerald-700">(No Meat, No Fillers)</p>
+            </div>
+          </div>
+
+          <div class="space-y-4 text-stone-600 text-sm leading-relaxed">
+            <p>
+              We exclusively use <strong>premium Russet potatoes</strong> sourced directly from trusted farms. We refuse to pad our puffs with mystery meat chunks, low-grade mince, or cheap starches.
+            </p>
+            <div class="bg-amber-50/70 rounded-xl p-4 border border-amber-200 text-xs space-y-2">
+              <div class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-700 mt-0.5 shrink-0"></i>
+                <span><strong>Uniform 5mm Cubes:</strong> Every single potato is hand-peeled and diced into precise 5mm cubes daily.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-700 mt-0.5 shrink-0"></i>
+                <span><strong>Soft, Fluffy & Aromatic:</strong> The exact 5mm cube dimension guarantees each piece cooks up tender, velvety, and deeply infused with curry essence—never mushy.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-stone-100 flex items-center justify-between text-xs font-semibold text-stone-500">
+            <span>Hand-peeled daily at 6:00 AM</span>
+            <span class="text-amber-700">100% Meat-Free Pure Fill</span>
+          </div>
+        </div>
+
+        <!-- Pillar 2: Aromatic Malaysian Spices & Curry Leaves -->
+        <div class="bg-white rounded-3xl p-8 border border-amber-200/80 shadow-md hover:shadow-xl transition-all duration-300 relative group overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-100/50 rounded-bl-[100px] pointer-events-none group-hover:scale-110 transition-transform"></div>
+          
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-16 h-16 rounded-2xl bg-emerald-100 flex items-center justify-center text-3xl shadow-sm group-hover:bg-emerald-200 transition">
+              🌿
+            </div>
+            <div>
+              <span class="text-xs uppercase font-extrabold text-emerald-700 tracking-wider">Pillar 02 • Fragrance & Heat</span>
+              <h3 class="font-serif text-2xl font-bold text-stone-900">Aromatic Malaysian Spices & Curry Leaves</h3>
+              <p class="text-xs font-semibold text-amber-700">(The "Pecah Minyak" Technique)</p>
+            </div>
+          </div>
+
+          <div class="space-y-4 text-stone-600 text-sm leading-relaxed">
+            <p>
+              <strong>Zero artificial flavorings or MSG cubes.</strong> We begin by gently sautéing fresh shallots, garlic, freshly grated young ginger, and fragrant garden-picked curry leaves in pure oil.
+            </p>
+            <div class="bg-emerald-50/70 rounded-xl p-4 border border-emerald-200 text-xs space-y-2">
+              <div class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-700 mt-0.5 shrink-0"></i>
+                <span><strong>Roasted Spice Bouquet:</strong> Blooming roasted cumin, coriander seeds, aromatic fennel, and authentic Malaysian curry powder.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-700 mt-0.5 shrink-0"></i>
+                <span><strong>"Pecah Minyak" Mastery:</strong> Sautéed slowly until the oil separates and glistens with deep red-gold hue, releasing pure, unadulterated spice aromas into every potato pore.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-stone-100 flex items-center justify-between text-xs font-semibold text-stone-500">
+            <span>Freshly bloomed spices</span>
+            <span class="text-emerald-700">Garden Curry Leaves</span>
+          </div>
+        </div>
+
+        <!-- Pillar 3: Shatteringly Flaky "Karipap Pusing" Spiral Crust -->
+        <div class="bg-white rounded-3xl p-8 border border-amber-200/80 shadow-md hover:shadow-xl transition-all duration-300 relative group overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-amber-200/40 rounded-bl-[100px] pointer-events-none group-hover:scale-110 transition-transform"></div>
+          
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-16 h-16 rounded-2xl bg-amber-100 flex items-center justify-center text-3xl shadow-sm group-hover:bg-amber-200 transition">
+              🌀
+            </div>
+            <div>
+              <span class="text-xs uppercase font-extrabold text-amber-700 tracking-wider">Pillar 03 • The Pastry Miracle</span>
+              <h3 class="font-serif text-2xl font-bold text-stone-900">Shatteringly Flaky Spiral Crust</h3>
+              <p class="text-xs font-semibold text-amber-800">(Up to 8-Hour Crunch Guarantee)</p>
+            </div>
+          </div>
+
+          <div class="space-y-4 text-stone-600 text-sm leading-relaxed">
+            <p>
+              Unlike flat, doughy generic puffs, authentic <strong>Karipap Pusing</strong> requires our signature <em>double-dough rolling technique</em>.
+            </p>
+            <div class="bg-amber-50/70 rounded-xl p-4 border border-amber-200 text-xs space-y-2">
+              <div class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-700 mt-0.5 shrink-0"></i>
+                <span><strong>Water Dough + Oil Dough:</strong> Two contrasting doughs are rolled, folded, turned, and coiled like a snail shell to build dozens of microscopically thin alternating pastry sheets.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-700 mt-0.5 shrink-0"></i>
+                <span><strong>Golden Spiral Bloom:</strong> In hot oil, these micro-layers burst outward into crispy spiral rings that remain light and crunchy for up to 8 hours without turning soft!</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-stone-100 flex items-center justify-between text-xs font-semibold text-stone-500">
+            <span>Hand-rolled spiral coils</span>
+            <span class="text-amber-800">8-Hour Crunch Protection</span>
+          </div>
+        </div>
+
+        <!-- Pillar 4: Fried Fresh Daily at 170°C -->
+        <div class="bg-white rounded-3xl p-8 border border-amber-200/80 shadow-md hover:shadow-xl transition-all duration-300 relative group overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-orange-100/50 rounded-bl-[100px] pointer-events-none group-hover:scale-110 transition-transform"></div>
+          
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-16 h-16 rounded-2xl bg-orange-100 flex items-center justify-center text-3xl shadow-sm group-hover:bg-orange-200 transition">
+              🍳
+            </div>
+            <div>
+              <span class="text-xs uppercase font-extrabold text-orange-700 tracking-wider">Pillar 04 • Precision Frying</span>
+              <h3 class="font-serif text-2xl font-bold text-stone-900">Fried Fresh Daily at Precisely 170°C</h3>
+              <p class="text-xs font-semibold text-orange-800">(Never Frozen, Grease-Free)</p>
+            </div>
+          </div>
+
+          <div class="space-y-4 text-stone-600 text-sm leading-relaxed">
+            <p>
+              We <strong>never sell frozen or pre-fried puffs</strong> that have been languishing on warming racks. Every batch is hand-crimped right before frying.
+            </p>
+            <div class="bg-orange-50/70 rounded-xl p-4 border border-orange-200 text-xs space-y-2">
+              <div class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-orange-700 mt-0.5 shrink-0"></i>
+                <span><strong>Precision 170°C Temp:</strong> Fried in small, controlled batches at exactly 170°C. This instant heat flash-seals the crust so oil never penetrates the interior.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-orange-700 mt-0.5 shrink-0"></i>
+                <span><strong>Piping Hot & Light:</strong> You receive them feather-light, completely non-greasy to the touch, and steaming hot with rich curry fragrance.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-stone-100 flex items-center justify-between text-xs font-semibold text-stone-500">
+            <span>Small-batch frying</span>
+            <span class="text-orange-800">100% Non-Greasy Guarantee</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERACTIVE SECTION: ANATOMY OF A PERFECT SPIRAL PUFF -->
+  <section id="spiral-anatomy" class="py-20 bg-stone-900 text-amber-50 relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-amber-900/40 via-stone-900 to-stone-950 pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+        <span class="text-xs uppercase font-extrabold tracking-widest text-amber-400 bg-amber-950/70 border border-amber-800/60 px-4 py-1.5 rounded-full inline-block">
+          Interactive Pastry Science
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
+          The Anatomy of a Shatteringly Flaky Karipap Pusing
+        </h2>
+        <p class="text-stone-300 text-sm sm:text-base">
+          Click the interactive layers below to inspect how traditional Balik Pulau pastry engineering creates that signature 8-hour crunch.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <!-- Interactive Anatomy Graphic Visualizer -->
+        <div class="lg:col-span-6 bg-stone-800/80 rounded-3xl p-6 sm:p-8 border border-amber-700/30 shadow-2xl">
+          <div class="relative w-full aspect-square max-w-md mx-auto flex items-center justify-center">
+            
+            <!-- Dynamic Diagram SVG -->
+            <svg viewBox="0 0 400 400" class="w-full h-full drop-shadow-2xl">
+              <!-- Background Glow -->
+              <circle cx="200" cy="200" r="160" fill="#78350F" opacity="0.15" />
+
+              <!-- Outer Spiral Crust Shell -->
+              <g id="layer-crust" class="cursor-pointer transition-all duration-300 hover:opacity-90">
+                <path d="M 60 210 C 60 100, 160 50, 270 70 C 340 80, 360 160, 340 230 C 310 310, 220 340, 140 320 C 80 310, 60 260, 60 210 Z" fill="#D97706" stroke="#FEF3C7" stroke-width="4" />
+                <path d="M 120 180 Q 200 120, 260 160 Q 300 190, 270 240 Q 230 290, 160 260 Q 120 230, 150 190" fill="none" stroke="#FDE68A" stroke-width="3.5" stroke-dasharray="6,4" />
+              </g>
+
+              <!-- Hand-crimped edge (Tali Pilin) -->
+              <g id="layer-crimp" class="cursor-pointer">
+                <path d="M 60 210 C 60 260, 80 310, 140 320 C 220 340, 310 310, 340 230" fill="none" stroke="#92400E" stroke-width="14" stroke-linecap="round" opacity="0.6" />
+                <circle cx="80" cy="245" r="8" fill="#F59E0B" stroke="#451A03" stroke-width="2" />
+                <circle cx="105" cy="275" r="8" fill="#F59E0B" stroke="#451A03" stroke-width="2" />
+                <circle cx="140" cy="302" r="8" fill="#F59E0B" stroke="#451A03" stroke-width="2" />
+                <circle cx="180" cy="318" r="8" fill="#F59E0B" stroke="#451A03" stroke-width="2" />
+                <circle cx="225" cy="318" r="8" fill="#F59E0B" stroke="#451A03" stroke-width="2" />
+                <circle cx="270" cy="298" r="8" fill="#F59E0B" stroke="#451A03" stroke-width="2" />
+                <circle cx="310" cy="265" r="8" fill="#F59E0B" stroke="#451A03" stroke-width="2" />
+                <circle cx="335" cy="225" r="8" fill="#F59E0B" stroke="#451A03" stroke-width="2" />
+              </g>
+
+              <!-- Inner Potato Core -->
+              <g id="layer-potato" class="cursor-pointer">
+                <ellipse cx="205" cy="185" rx="85" ry="60" fill="#B45309" stroke="#F59E0B" stroke-width="2" />
+                <!-- 5mm Potato Cubes representation -->
+                <rect x="155" y="160" width="16" height="16" rx="2" fill="#FEF3C7" stroke="#92400E" stroke-width="1.5" />
+                <rect x="180" y="150" width="16" height="16" rx="2" fill="#FDE68A" stroke="#92400E" stroke-width="1.5" />
+                <rect x="205" y="165" width="16" height="16" rx="2" fill="#FEF3C7" stroke="#92400E" stroke-width="1.5" />
+                <rect x="230" y="155" width="16" height="16" rx="2" fill="#FDE68A" stroke="#92400E" stroke-width="1.5" />
+                <rect x="165" y="185" width="16" height="16" rx="2" fill="#FDE68A" stroke="#92400E" stroke-width="1.5" />
+                <rect x="195" y="190" width="16" height="16" rx="2" fill="#FEF3C7" stroke="#92400E" stroke-width="1.5" />
+                <rect x="225" y="180" width="16" height="16" rx="2" fill="#FDE68A" stroke="#92400E" stroke-width="1.5" />
+                <rect x="180" y="210" width="16" height="16" rx="2" fill="#FEF3C7" stroke="#92400E" stroke-width="1.5" />
+                <rect x="210" y="210" width="16" height="16" rx="2" fill="#FDE68A" stroke="#92400E" stroke-width="1.5" />
+
+                <!-- Curry Leaves in filling -->
+                <path d="M 140 175 Q 150 168, 160 178 Q 150 185, 140 175 Z" fill="#15803D" stroke="#14532D" stroke-width="1" />
+                <path d="M 245 195 Q 255 188, 265 198 Q 255 205, 245 195 Z" fill="#15803D" stroke="#14532D" stroke-width="1" />
+                <path d="M 190 135 Q 200 128, 210 138 Q 200 145, 190 135 Z" fill="#15803D" stroke="#14532D" stroke-width="1" />
+              </g>
+
+              <!-- Indicator callouts -->
+              <circle cx="205" cy="185" r="5" fill="#FFFFFF" class="animate-ping" />
+            </svg>
+
+            <!-- Bottom badge -->
+            <div class="absolute bottom-2 text-center text-xs text-amber-300 font-semibold bg-stone-900/80 px-4 py-1.5 rounded-full border border-amber-700/50">
+              Cross-section of Nat's Karipap Pusing
+            </div>
+          </div>
+        </div>
+
+        <!-- Layer Explanations -->
+        <div class="lg:col-span-6 space-y-4">
+          
+          <!-- Accordion item 1 -->
+          <div class="bg-stone-800/90 rounded-2xl p-5 border border-amber-500/30 hover:border-amber-400 transition cursor-pointer layer-card active" data-layer="dough">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-amber-600/30 text-amber-300 flex items-center justify-center font-bold text-sm">01</span>
+                <h3 class="font-serif font-bold text-lg text-white">The Double-Dough Micro-Layers</h3>
+              </div>
+              <i data-lucide="chevron-right" class="w-5 h-5 text-amber-400"></i>
+            </div>
+            <p class="text-stone-300 text-xs sm:text-sm mt-3 leading-relaxed">
+              We prepare two distinct doughs: an elastic <strong>Water Dough</strong> (flour, iced water, salt) and a velvety <strong>Oil Dough</strong> (flour, pure ghee/fat). Coiled together in concentric spiral rolls, they create dozens of separate micro-sheets that puff into a delicate honeycomb during frying.
+            </p>
+          </div>
+
+          <!-- Accordion item 2 -->
+          <div class="bg-stone-800/90 rounded-2xl p-5 border border-stone-700 hover:border-amber-400 transition cursor-pointer layer-card" data-layer="potatoes">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-amber-600/30 text-amber-300 flex items-center justify-center font-bold text-sm">02</span>
+                <h3 class="font-serif font-bold text-lg text-white">The 5mm Uniform Russet Potato Heart</h3>
+              </div>
+              <i data-lucide="chevron-right" class="w-5 h-5 text-amber-400"></i>
+            </div>
+            <p class="text-stone-300 text-xs sm:text-sm mt-3 leading-relaxed">
+              Why precisely 5mm? Larger chunks leave dry, cold centres; smaller mash turns into gluey baby food. Hand-cubed 5mm Russets allow the rich curry gravy to coat every surface while preserving a satisfying, tender bite. 100% vegetarian friendly with zero meat fillers.
+            </p>
+          </div>
+
+          <!-- Accordion item 3 -->
+          <div class="bg-stone-800/90 rounded-2xl p-5 border border-stone-700 hover:border-amber-400 transition cursor-pointer layer-card" data-layer="crimp">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-amber-600/30 text-amber-300 flex items-center justify-center font-bold text-sm">03</span>
+                <h3 class="font-serif font-bold text-lg text-white">Traditional Hand-Crimped "Tali Pilin"</h3>
+              </div>
+              <i data-lucide="chevron-right" class="w-5 h-5 text-amber-400"></i>
+            </div>
+            <p class="text-stone-300 text-xs sm:text-sm mt-3 leading-relaxed">
+              Every single puff is pleated with thumb and index finger into the classic rope braid (<em>Tali Pilin</em>). This tight, artistic hermetic seal locks in all moisture and prevents hot oil from penetrating the fragrant curry core during the 170°C fry.
+            </p>
+          </div>
+
+          <!-- Accordion item 4 -->
+          <div class="bg-stone-800/90 rounded-2xl p-5 border border-stone-700 hover:border-amber-400 transition cursor-pointer layer-card" data-layer="fry">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-amber-600/30 text-amber-300 flex items-center justify-center font-bold text-sm">04</span>
+                <h3 class="font-serif font-bold text-lg text-white">The 170°C Precision Flash Crisp</h3>
+              </div>
+              <i data-lucide="chevron-right" class="w-5 h-5 text-amber-400"></i>
+            </div>
+            <p class="text-stone-300 text-xs sm:text-sm mt-3 leading-relaxed">
+              Too cold, and pastry absorbs grease. Too hot, and the exterior burns before the potato warms through. At exactly 170°C, the water in the dough instantly turns to steam, pushing the micro-layers apart into golden crispy ribbons that stay shatteringly crisp for 8 hours.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- COMPARISON TABLE: NAT'S vs COMMERCIAL FROZEN PUFFS -->
+  <section class="py-20 bg-white border-b border-amber-100">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center space-y-3 mb-12">
+        <span class="text-xs uppercase font-extrabold text-amber-700 bg-amber-100 px-3 py-1 rounded-full">
+          The Honest Comparison
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900">
+          The Difference You Can Hear & Taste
+        </h2>
+        <p class="text-stone-600 text-sm sm:text-base">
+          See why food lovers make the drive to Balik Pulau instead of buying supermarket puffs.
+        </p>
+      </div>
+
+      <div class="overflow-x-auto rounded-3xl border border-amber-200 shadow-md">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="bg-amber-50/70 border-b border-amber-200 text-stone-800 text-xs sm:text-sm font-bold uppercase tracking-wider">
+              <th class="p-4 sm:p-5 w-1/3">Feature</th>
+              <th class="p-4 sm:p-5 w-1/3 bg-amber-100/70 text-amber-900 border-x border-amber-200">
+                <div class="flex items-center gap-2">
+                  <span class="text-lg">🌀</span>
+                  <span>Nat's Handcrafted Spiral</span>
+                </div>
+              </th>
+              <th class="p-4 sm:p-5 w-1/3 text-stone-500">Commercial Mass Puffs</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-amber-100 text-xs sm:text-sm">
+            <tr>
+              <td class="p-4 sm:p-5 font-semibold text-stone-900">Potato Quality & Cut</td>
+              <td class="p-4 sm:p-5 bg-amber-50/30 text-amber-950 font-medium border-x border-amber-100">
+                🥔 100% Farm-Fresh Russets, hand-peeled & uniform 5mm cubes daily
+              </td>
+              <td class="p-4 sm:p-5 text-stone-500">
+                Machine-mashed low-grade potato paste or dehydrated flakes
+              </td>
+            </tr>
+            <tr>
+              <td class="p-4 sm:p-5 font-semibold text-stone-900">Fillers & Meat</td>
+              <td class="p-4 sm:p-5 bg-amber-50/30 text-amber-950 font-medium border-x border-amber-100">
+                🌿 100% Meat-Free; Zero artificial flavorings, zero fillers
+              </td>
+              <td class="p-4 sm:p-5 text-stone-500">
+                Processed meat trimmings, excessive flour thickeners & MSG
+              </td>
+            </tr>
+            <tr>
+              <td class="p-4 sm:p-5 font-semibold text-stone-900">Spices & Aroma</td>
+              <td class="p-4 sm:p-5 bg-amber-50/30 text-amber-950 font-medium border-x border-amber-100">
+                ✨ Roasted cumin, coriander, fennel & garden curry leaves sautéed to "pecah minyak"
+              </td>
+              <td class="p-4 sm:p-5 text-stone-500">
+                Pre-packaged artificial seasoning powders
+              </td>
+            </tr>
+            <tr>
+              <td class="p-4 sm:p-5 font-semibold text-stone-900">Crust Structure</td>
+              <td class="p-4 sm:p-5 bg-amber-50/30 text-amber-950 font-medium border-x border-amber-100">
+                🌀 Delicate micro-layered "Karipap Pusing" spiral pastry
+              </td>
+              <td class="p-4 sm:p-5 text-stone-500">
+                Thick, dense single-dough shortcrust
+              </td>
+            </tr>
+            <tr>
+              <td class="p-4 sm:p-5 font-semibold text-stone-900">Crunch Retention</td>
+              <td class="p-4 sm:p-5 bg-amber-50/30 text-amber-950 font-medium border-x border-amber-100">
+                ⏱️ Stays shatteringly crisp up to <strong>8 full hours</strong>
+              </td>
+              <td class="p-4 sm:p-5 text-stone-500">
+                Turns limp, greasy and soggy within 30–45 minutes
+              </td>
+            </tr>
+            <tr>
+              <td class="p-4 sm:p-5 font-semibold text-stone-900">Frying Practice</td>
+              <td class="p-4 sm:p-5 bg-amber-50/30 text-amber-950 font-medium border-x border-amber-100">
+                🍳 Small batches fried fresh at exactly 170°C; never frozen
+              </td>
+              <td class="p-4 sm:p-5 text-stone-500">
+                Bulk factory par-fried, frozen for months, re-fried in aged oil
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MENU, BOXES & INTERACTIVE ORDER CALCULATOR -->
+  <section id="menu-pricing" class="py-20 bg-[#FAF6F0] relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+        <span class="text-xs uppercase font-extrabold text-amber-700 bg-amber-100 px-3.5 py-1 rounded-full">
+          Fresh From Our Balik Pulau Kitchen
+        </span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-stone-900">
+          Handcrafted Box Sets & Pricing
+        </h2>
+        <p class="text-stone-600 text-base sm:text-lg">
+          Packed in ventilated craft boxes with grease-absorbing liner to preserve that 8-hour crunch on your drive home.
+        </p>
+      </div>
+
+      <!-- Box Options Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        
+        <!-- Box 1: Taster Box -->
+        <div class="bg-white rounded-3xl p-7 border border-amber-200/80 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between relative">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs uppercase font-bold tracking-widest text-stone-500">The Taster</span>
+              <span class="text-xs font-bold text-amber-700 bg-amber-100 px-2.5 py-0.5 rounded-full">5 Pieces</span>
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-stone-900">Crisp Taster Box</h3>
+            <p class="text-xs text-stone-500 mt-1">Perfect for tea-time solo craving or a couple's afternoon snack.</p>
+            
+            <div class="my-6">
+              <div class="flex items-baseline gap-1">
+                <span class="text-xs text-stone-500 font-bold">RM</span>
+                <span class="text-4xl font-extrabold text-stone-900">15.00</span>
+                <span class="text-xs text-stone-400">/ box</span>
+              </div>
+              <p class="text-[11px] text-amber-700 font-medium mt-1">RM 3.00 per handmade spiral puff</p>
+            </div>
+
+            <ul class="space-y-3 text-xs text-stone-600 border-t border-stone-100 pt-5">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-amber-600"></i>
+                <span>5x Freshly Fried Spiral Curry Puffs</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-amber-600"></i>
+                <span>100% Farm-Fresh Russet 5mm Cubes</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-amber-600"></i>
+                <span>Ventilated crisp-keeper paper sleeve</span>
+              </li>
+            </ul>
+          </div>
+
+          <button onclick="selectBoxPreset(5)" class="mt-8 w-full py-3 rounded-full border-2 border-amber-600 text-amber-700 hover:bg-amber-600 hover:text-white font-bold text-sm transition">
+            Select Taster (5 Pcs)
+          </button>
+        </div>
+
+        <!-- Box 2: Family Box (FEATURED) -->
+        <div class="bg-white rounded-3xl p-7 border-2 border-amber-500 shadow-golden-lg transition-all flex flex-col justify-between relative transform md:-translate-y-2">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-amber-600 to-orange-600 text-white text-[10px] uppercase font-black px-4 py-1 rounded-full shadow-md tracking-wider">
+            ★ Most Popular Choice
+          </div>
+
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs uppercase font-bold tracking-widest text-amber-700">Family Favorite</span>
+              <span class="text-xs font-bold text-white bg-amber-600 px-2.5 py-0.5 rounded-full">10 Pieces</span>
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-stone-900">Family Sharing Box</h3>
+            <p class="text-xs text-stone-500 mt-1">Generous box for family tea gatherings and Sunday brunch.</p>
+            
+            <div class="my-6">
+              <div class="flex items-baseline gap-1">
+                <span class="text-xs text-stone-500 font-bold">RM</span>
+                <span class="text-4xl font-extrabold text-stone-900">28.00</span>
+                <span class="text-xs text-stone-400">/ box</span>
+              </div>
+              <p class="text-[11px] text-emerald-700 font-semibold mt-1">Save RM 2.00 • RM 2.80 each</p>
+            </div>
+
+            <ul class="space-y-3 text-xs text-stone-600 border-t border-stone-100 pt-5">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-amber-600"></i>
+                <span>10x Freshly Fried Spiral Curry Puffs</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-amber-600"></i>
+                <span>Artisan Kraft ventilated gift box</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-amber-600"></i>
+                <span>Complimentary reheating instruction card</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-amber-600"></i>
+                <span>Stays crunchy for your entire island drive</span>
+              </li>
+            </ul>
+          </div>
+
+          <button onclick="selectBoxPreset(10)" class="mt-8 w-full py-3.5 rounded-full bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-700 hover:to-amber-600 text-white font-bold text-sm shadow-md transition">
+            Select Family Box (10 Pcs)
+          </button>
+        </div>
+
+        <!-- Box 3: Penang Souvenir / Party Box -->
+        <div class="bg-white rounded-3xl p-7 border border-amber-200/80 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between relative">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs uppercase font-bold tracking-widest text-stone-500">Penang Souvenir</span>
+              <span class="text-xs font-bold text-stone-800 bg-stone-100 px-2.5 py-0.5 rounded-full">20 Pieces</span>
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-stone-900">Gathering & Gift Box</h3>
+            <p class="text-xs text-stone-500 mt-1">The ultimate culinary gift to bring home from Balik Pulau.</p>
+            
+            <div class="my-6">
+              <div class="flex items-baseline gap-1">
+                <span class="text-xs text-stone-500 font-bold">RM</span>
+                <span class="text-4xl font-extrabold text-stone-900">52.00</span>
+                <span class="text-xs text-stone-400">/ box</span>
+              </div>
+              <p class="text-[11px] text-emerald-700 font-semibold mt-1">Save RM 8.00 • RM 2.60 each</p>
+            </div>
+
+            <ul class="space-y-3 text-xs text-stone-600 border-t border-stone-100 pt-5">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-amber-600"></i>
+                <span>20x Handcrafted Spiral Curry Puffs</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-amber-600"></i>
+                <span>Deluxe Twin-Compartment carrier box</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-amber-600"></i>
+                <span>Ideal for office treats, potlucks & family gifts</span>
+              </li>
+            </ul>
+          </div>
+
+          <button onclick="selectBoxPreset(20)" class="mt-8 w-full py-3 rounded-full border-2 border-stone-800 text-stone-800 hover:bg-stone-900 hover:text-white font-bold text-sm transition">
+            Select Gift Box (20 Pcs)
+          </button>
+        </div>
+
+      </div>
+
+      <!-- INTERACTIVE ORDER CALCULATOR & WHATSAPP GENERATOR -->
+      <div id="order-calculator" class="bg-white rounded-3xl p-6 sm:p-10 border border-amber-200 shadow-xl max-w-4xl mx-auto">
+        <div class="border-b border-stone-100 pb-6 mb-8 text-center sm:text-left flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div>
+            <span class="text-xs font-bold text-amber-700 uppercase tracking-widest">Interactive Order Generator</span>
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-stone-900">Build Your Fresh Batch Pre-Order</h3>
+            <p class="text-stone-500 text-xs sm:text-sm mt-1">Pick your quantity & timing. We fry them right before your pickup.</p>
+          </div>
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 text-xs font-bold">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+            <span>Kitchen Open Today</span>
+          </div>
+        </div>
+
+        <form id="order-form" onsubmit="handleOrderSubmit(event)" class="space-y-8">
+          
+          <!-- Step 1: Piece Counter -->
+          <div>
+            <label class="block text-sm font-bold text-stone-800 mb-3">1. Select Quantity of Puffs:</label>
+            <div class="flex items-center gap-4">
+              <div class="flex items-center border-2 border-amber-300 rounded-2xl bg-amber-50/50 p-1">
+                <button type="button" onclick="adjustPuffs(-1)" class="w-12 h-12 rounded-xl bg-white hover:bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-xl shadow-sm transition">
+                  –
+                </button>
+                <div class="w-20 text-center">
+                  <span id="puff-count-display" class="font-serif font-extrabold text-3xl text-stone-900">10</span>
+                  <span class="block text-[10px] text-stone-500 uppercase font-semibold">Puffs</span>
+                </div>
+                <button type="button" onclick="adjustPuffs(1)" class="w-12 h-12 rounded-xl bg-white hover:bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-xl shadow-sm transition">
+                  +
+                </button>
+              </div>
+
+              <!-- Quick buttons -->
+              <div class="hidden sm:flex items-center gap-2">
+                <button type="button" onclick="setPuffs(5)" class="px-3.5 py-2 text-xs font-bold rounded-xl border border-stone-200 hover:border-amber-500 bg-white hover:bg-amber-50 transition">5 Pcs (Taster)</button>
+                <button type="button" onclick="setPuffs(10)" class="px-3.5 py-2 text-xs font-bold rounded-xl border border-amber-500 bg-amber-50 text-amber-800 transition">10 Pcs (Family)</button>
+                <button type="button" onclick="setPuffs(20)" class="px-3.5 py-2 text-xs font-bold rounded-xl border border-stone-200 hover:border-amber-500 bg-white hover:bg-amber-50 transition">20 Pcs (Party)</button>
+                <button type="button" onclick="setPuffs(30)" class="px-3.5 py-2 text-xs font-bold rounded-xl border border-stone-200 hover:border-amber-500 bg-white hover:bg-amber-50 transition">30 Pcs (Event)</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2: Customer Details -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="cust-name" class="block text-xs font-bold text-stone-700 uppercase tracking-wide mb-1.5">Your Name:</label>
+              <input type="text" id="cust-name" required placeholder="e.g. Rachel Tan" class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm">
+            </div>
+
+            <div>
+              <label for="pickup-time" class="block text-xs font-bold text-stone-700 uppercase tracking-wide mb-1.5">Preferred Pickup Time (Today in Balik Pulau):</label>
+              <select id="pickup-time" class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm bg-white">
+                <option value="11:30 AM (Batch 1)">11:30 AM (Fresh Batch 1)</option>
+                <option value="1:00 PM (Batch 2)">1:00 PM (Fresh Batch 2 - Lunch)</option>
+                <option value="3:00 PM (Batch 3)" selected>3:00 PM (Fresh Batch 3 - Tea Time)</option>
+                <option value="4:30 PM (Batch 4)">4:30 PM (Fresh Batch 4 - Late Tea)</option>
+                <option value="6:00 PM (Batch 5)">6:00 PM (Final Sunset Batch)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Step 3: Special notes -->
+          <div>
+            <label for="cust-notes" class="block text-xs font-bold text-stone-700 uppercase tracking-wide mb-1.5">Special Request / Note (Optional):</label>
+            <input type="text" id="cust-notes" placeholder="e.g. Please pack separately in boxes of 5, packing for flight to KL" class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm">
+          </div>
+
+          <!-- Live Price Summary Box -->
+          <div class="bg-amber-50/80 rounded-2xl p-6 border border-amber-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+              <div class="text-xs uppercase font-bold text-stone-500">Estimated Total:</div>
+              <div class="flex items-baseline gap-1 mt-0.5">
+                <span class="text-lg font-bold text-stone-700">RM</span>
+                <span id="calculated-total" class="font-serif font-black text-4xl text-amber-900">28.00</span>
+                <span id="calculated-savings" class="ml-2 text-xs font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">Saved RM 2.00</span>
+              </div>
+              <p class="text-[11px] text-stone-500 mt-1">Payment via DuitNow QR or Cash upon pickup in Balik Pulau</p>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-700 hover:to-emerald-600 text-white font-bold text-base shadow-lg hover:shadow-xl transition flex items-center justify-center gap-2 cursor-pointer">
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+              <span>Send Order to WhatsApp</span>
+            </button>
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CRUNCH CARE & AIR FRYER REHEAT GUIDE -->
+  <section id="reheat-guide" class="py-16 bg-white border-y border-amber-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <div class="lg:col-span-5 space-y-4">
+          <span class="text-xs uppercase font-extrabold text-amber-700 tracking-wider">The 8-Hour Crunch Promise</span>
+          <h2 class="font-serif text-3xl font-bold text-stone-900">
+            How to Enjoy & Reheat Like It Just Left The 170°C Oil
+          </h2>
+          <p class="text-stone-600 text-sm leading-relaxed">
+            Thanks to our double-dough micro-layering technique, Nat’s puffs remain delightfully crispy at ambient temperature for up to 8 hours. But if you take them home across the Penang bridge, here is the secret to 100% restored crunch!
+          </p>
+          <div class="p-4 bg-amber-50 rounded-2xl border border-amber-200 text-xs text-amber-900 flex items-start gap-3">
+            <i data-lucide="alert-circle" class="w-5 h-5 text-amber-700 shrink-0 mt-0.5"></i>
+            <div>
+              <strong>Golden Rule:</strong> Never microwave! A microwave turns pastry into rubber. Use dry radiant heat instead.
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            
+            <div class="bg-[#FFFDF9] rounded-2xl p-5 border border-stone-200 hover:border-amber-400 transition">
+              <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center mb-3">
+                <i data-lucide="wind" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-serif font-bold text-base text-stone-900">Method 1: Air Fryer (Recommended)</h3>
+              <p class="text-xs text-stone-600 mt-2">
+                Preheat to <strong>160°C</strong>. Place curry puffs spaced out without overlapping. Heat for <strong>3 to 4 minutes</strong>. Let rest for 1 minute for the micro-layers to re-crystallize.
+              </p>
+            </div>
+
+            <div class="bg-[#FFFDF9] rounded-2xl p-5 border border-stone-200 hover:border-amber-400 transition">
+              <div class="w-10 h-10 rounded-xl bg-orange-100 text-orange-800 flex items-center justify-center mb-3">
+                <i data-lucide="flame" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-serif font-bold text-base text-stone-900">Method 2: Conventional Toaster Oven</h3>
+              <p class="text-xs text-stone-600 mt-2">
+                Bake at <strong>170°C for 5 to 6 minutes</strong> on a parchment tray. The residual oil in the micro-layers will re-sizzle and restore that shatteringly crisp acoustic snap.
+              </p>
+            </div>
+
+            <div class="bg-[#FFFDF9] rounded-2xl p-5 border border-stone-200 hover:border-amber-400 transition">
+              <div class="w-10 h-10 rounded-xl bg-stone-100 text-stone-800 flex items-center justify-center mb-3">
+                <i data-lucide="box" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-serif font-bold text-base text-stone-900">Storing Overnight</h3>
+              <p class="text-xs text-stone-600 mt-2">
+                Keep in an unsealed breathable box at cool room temperature for up to 24 hours, or refrigerate in an airtight container for up to 3 days. Reheat before eating!
+              </p>
+            </div>
+
+            <div class="bg-[#FFFDF9] rounded-2xl p-5 border border-stone-200 hover:border-amber-400 transition">
+              <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center mb-3">
+                <i data-lucide="coffee" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-serif font-bold text-base text-stone-900">The Perfect Balik Pulau Pairing</h3>
+              <p class="text-xs text-stone-600 mt-2">
+                Serve alongside hot Penang Kopi-O, fresh nutmeg juice from Balik Pulau orchards, or spiced ginger teh tarik.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CUSTOMER LOVE & TESTIMONIALS -->
+  <section class="py-20 bg-[#FAF6F0]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+        <span class="text-xs uppercase font-extrabold text-amber-700 bg-amber-100 px-3.5 py-1 rounded-full">
+          Word of Mouth in Penang
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900">
+          Loved by Locals, Weekend Cyclists & Food Hunters
+        </h2>
+        <p class="text-stone-600 text-sm sm:text-base">
+          Read what people say after experiencing the crunch of Nat's Karipap Pusing.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Review 1 -->
+        <div class="bg-white rounded-3xl p-7 border border-amber-100 shadow-sm hover:shadow-md transition">
+          <div class="flex items-center text-amber-500 mb-3 text-sm">
+            ★★★★★
+          </div>
+          <p class="text-stone-700 text-sm italic leading-relaxed">
+            "I drove 45 minutes from George Town all the way to Balik Pulau just for these. The spiral layers actually shattered when I took the first bite. The 5mm diced potatoes are so soft and fragrant, not mushy at all. 10/10!"
+          </p>
+          <div class="mt-6 pt-4 border-t border-stone-100 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-amber-200 text-amber-900 font-bold flex items-center justify-center text-xs">
+              CK
+            </div>
+            <div>
+              <p class="font-bold text-xs text-stone-900">Cheah Kah Seng</p>
+              <p class="text-[11px] text-stone-500">George Town, Penang</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-white rounded-3xl p-7 border border-amber-100 shadow-sm hover:shadow-md transition">
+          <div class="flex items-center text-amber-500 mb-3 text-sm">
+            ★★★★★
+          </div>
+          <p class="text-stone-700 text-sm italic leading-relaxed">
+            "As a vegetarian, it's so hard to find authentic curry puffs without mystery meat or chicken powder. Nat’s puffs are 100% potato and pure spices. You can truly taste the sautéed fresh shallots and curry leaves. Magnificent!"
+          </p>
+          <div class="mt-6 pt-4 border-t border-stone-100 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-emerald-200 text-emerald-900 font-bold flex items-center justify-center text-xs">
+              PS
+            </div>
+            <div>
+              <p class="font-bold text-xs text-stone-900">Priya Shanmugam</p>
+              <p class="text-[11px] text-stone-500">Bayan Lepas Foodie</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-white rounded-3xl p-7 border border-amber-100 shadow-sm hover:shadow-md transition">
+          <div class="flex items-center text-amber-500 mb-3 text-sm">
+            ★★★★★
+          </div>
+          <p class="text-stone-700 text-sm italic leading-relaxed">
+            "We bought a 20-piece box before catching our flight back to Singapore. After 6 hours traveling, we opened the box and it was STILL crunchy! No oiliness on our fingers either. Frying at 170°C makes a huge difference."
+          </p>
+          <div class="mt-6 pt-4 border-t border-stone-100 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-orange-200 text-orange-900 font-bold flex items-center justify-center text-xs">
+              EL
+            </div>
+            <div>
+              <p class="font-bold text-xs text-stone-900">Evelyn & Marcus Lim</p>
+              <p class="text-[11px] text-stone-500">Singapore Visitors</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FREQUENTLY ASKED QUESTIONS (FAQ) -->
+  <section class="py-20 bg-white border-y border-amber-100">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center space-y-3 mb-12">
+        <span class="text-xs uppercase font-extrabold text-amber-700 bg-amber-100 px-3 py-1 rounded-full">
+          Got Questions?
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900">
+          Frequently Asked Questions
+        </h2>
+      </div>
+
+      <div class="space-y-4">
+        
+        <!-- FAQ 1 -->
+        <div class="border border-stone-200 rounded-2xl p-5 hover:border-amber-400 transition faq-item">
+          <button class="w-full flex items-center justify-between text-left font-serif font-bold text-base sm:text-lg text-stone-900 faq-btn">
+            <span>Are Nat’s Curry Puffs suitable for vegetarians?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-amber-600 transition-transform"></i>
+          </button>
+          <div class="mt-3 text-xs sm:text-sm text-stone-600 leading-relaxed faq-content">
+            Yes, 100%! We strictly use farm-fresh Russet potatoes, fresh aromatics (shallots, garlic, ginger, garden curry leaves), and pure ground spices. There is zero meat, zero chicken powder, and no lard.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="border border-stone-200 rounded-2xl p-5 hover:border-amber-400 transition faq-item">
+          <button class="w-full flex items-center justify-between text-left font-serif font-bold text-base sm:text-lg text-stone-900 faq-btn">
+            <span>How does the crust stay crunchy for up to 8 hours?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-amber-600 transition-transform"></i>
+          </button>
+          <div class="mt-3 text-xs sm:text-sm text-stone-600 leading-relaxed faq-content">
+            It comes down to our traditional "Karipap Pusing" double-dough layering technique. Alternating microscopically thin sheets of water dough and oil dough prevent moisture from reaching the outermost crust. When flash-fried at 170°C, the water evaporates instantly into structural air pockets that don't absorb ambient humidity easily.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="border border-stone-200 rounded-2xl p-5 hover:border-amber-400 transition faq-item">
+          <button class="w-full flex items-center justify-between text-left font-serif font-bold text-base sm:text-lg text-stone-900 faq-btn">
+            <span>Can I walk in, or is pre-ordering necessary?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-amber-600 transition-transform"></i>
+          </button>
+          <div class="mt-3 text-xs sm:text-sm text-stone-600 leading-relaxed faq-content">
+            Because we only fry in small batches at precisely 170°C to guarantee piping hot freshness, walk-in stocks sell out fast (especially on weekends and public holidays). We strongly recommend placing a WhatsApp pre-order at least 1–2 hours ahead so we can fry your box right as you arrive in Balik Pulau.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="border border-stone-200 rounded-2xl p-5 hover:border-amber-400 transition faq-item">
+          <button class="w-full flex items-center justify-between text-left font-serif font-bold text-base sm:text-lg text-stone-900 faq-btn">
+            <span>Do you do island delivery across Penang?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-amber-600 transition-transform"></i>
+          </button>
+          <div class="mt-3 text-xs sm:text-sm text-stone-600 leading-relaxed faq-content">
+            Yes! For orders of 20 pieces or more, we can arrange GrabExpress / Lalamove delivery throughout Penang Island (George Town, Bayan Lepas, Tanjung Bungah, etc.) with delivery fees at actual cost.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LOCATION & CONTACT IN BALIK PULAU -->
+  <section id="contact" class="py-20 bg-[#FAF6F0] relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Info Column -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center gap-2 text-amber-700 text-xs font-bold uppercase tracking-wider bg-amber-100 px-3 py-1 rounded-full">
+            <i data-lucide="map-pin" class="w-4 h-4"></i>
+            <span>Kitchen & Pickup Counter</span>
+          </div>
+
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900">
+            Come Visit Us in Balik Pulau, Penang
+          </h2>
+
+          <p class="text-stone-600 text-sm sm:text-base leading-relaxed">
+            Planning a weekend food trip around Penang Island? Make Nat Home Made Curry Puff your must-stop destination on the scenic Western route.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center shrink-0">
+                <i data-lucide="navigation" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-stone-900">Pickup Address:</h4>
+                <p class="text-xs sm:text-sm text-stone-600 mt-0.5">Jalan Balik Pulau, 11000 Balik Pulau, Penang Island, Malaysia</p>
+                <button onclick="copyAddress()" class="mt-1.5 text-xs text-amber-700 font-bold hover:underline flex items-center gap-1">
+                  <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+                  <span id="copy-btn-text">Copy Address for Waze / Google Maps</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center shrink-0">
+                <i data-lucide="clock" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-stone-900">Operating Hours:</h4>
+                <p class="text-xs sm:text-sm text-stone-600 mt-0.5">Tuesday – Sunday: <strong>11:00 AM – 6:30 PM</strong></p>
+                <p class="text-[11px] text-stone-500">(Closed on Mondays for spice sourcing & dough prep)</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
+                <i data-lucide="phone-call" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-stone-900">WhatsApp Hotlines:</h4>
+                <p class="text-xs sm:text-sm text-stone-600 mt-0.5">+60 12-488 9231 / +60 17-554 1820</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="pt-4 flex flex-wrap gap-3">
+            <a href="https://wa.me/60124889231?text=Hi%20Nat,%20I%20would%20like%20to%20order%20Karipap%20Pusing%20in%20Balik%20Pulau!" target="_blank" class="px-6 py-3 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm shadow-md transition flex items-center gap-2">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>Direct WhatsApp Chat</span>
+            </a>
+            <a href="#order-calculator" class="px-6 py-3 rounded-full bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs sm:text-sm shadow-md transition flex items-center gap-2">
+              <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+              <span>Calculate & Order Box</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Simulated Visual Map / Balik Pulau Scenic Card -->
+        <div class="lg:col-span-6">
+          <div class="bg-white rounded-3xl p-6 sm:p-8 border border-amber-200 shadow-xl relative overflow-hidden">
+            
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-red-500"></span>
+                <span class="w-3 h-3 rounded-full bg-yellow-500"></span>
+                <span class="w-3 h-3 rounded-full bg-green-500"></span>
+                <span class="text-xs font-bold text-stone-500 ml-2">Balik Pulau Scenic Route</span>
+              </div>
+              <span class="text-[11px] font-bold text-amber-700 bg-amber-100 px-2 py-0.5 rounded">Penang Western Trail</span>
+            </div>
+
+            <!-- Stylized Map Box -->
+            <div class="relative w-full h-72 rounded-2xl bg-gradient-to-br from-emerald-900 via-stone-800 to-amber-950 p-6 flex flex-col justify-between text-white overflow-hidden shadow-inner">
+              
+              <!-- Contour lines decor -->
+              <div class="absolute inset-0 opacity-15 pointer-events-none bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+
+              <div class="relative z-10">
+                <span class="text-[10px] uppercase font-bold text-emerald-400 tracking-widest">Penang Island • West Coast</span>
+                <h3 class="font-serif text-2xl font-bold mt-1">Balik Pulau Valley</h3>
+                <p class="text-xs text-stone-300">Surrounded by durian hills, nutmeg trees & sea breeze</p>
+              </div>
+
+              <!-- Pin graphic -->
+              <div class="relative z-10 self-center my-auto flex flex-col items-center">
+                <div class="relative flex items-center justify-center">
+                  <div class="w-12 h-12 rounded-full bg-amber-500/40 animate-ping absolute"></div>
+                  <div class="w-12 h-12 rounded-full bg-amber-600 text-white flex items-center justify-center shadow-lg border-2 border-white text-xl">
+                    🌀
+                  </div>
+                </div>
+                <div class="mt-2 bg-white text-stone-900 px-3 py-1 rounded-full text-xs font-black shadow-lg">
+                  Nat Home Made Curry Puff
+                </div>
+              </div>
+
+              <div class="relative z-10 flex items-center justify-between text-[11px] text-stone-300 border-t border-stone-700/60 pt-3">
+                <span>🚘 ~35 mins from Airport</span>
+                <span>🚘 ~40 mins from George Town</span>
+              </div>
+
+            </div>
+
+            <!-- Road trip tips -->
+            <div class="mt-4 p-3 bg-amber-50 rounded-xl text-xs text-stone-600 flex items-center gap-2">
+              <i data-lucide="compass" class="w-4 h-4 text-amber-700 shrink-0"></i>
+              <span><strong>Road Trip Tip:</strong> Pair your pickup with a visit to the local Balik Pulau countryside paddy fields & nutmeg factory!</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-stone-900 text-stone-400 py-14 border-t border-stone-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        
+        <!-- Brand Info -->
+        <div class="space-y-4 md:col-span-2">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-amber-600 flex items-center justify-center text-white text-xl shadow">
+              🌀
+            </div>
+            <span class="font-serif font-bold text-2xl text-white">Nat Home Made Curry Puff</span>
+          </div>
+          <p class="text-xs sm:text-sm text-stone-400 leading-relaxed max-w-md">
+            Traditional Karipap Pusing (spiral-layered curry puffs) handcrafted in the scenic town of Balik Pulau on Penang Island. 100% farm-fresh potatoes, pure Malaysian spices, and shatteringly flaky crust.
+          </p>
+          <div class="text-xs text-amber-400 font-medium">
+            Handcrafted with 100% passion in Balik Pulau, Penang.
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="space-y-3">
+          <h4 class="font-serif font-bold text-white text-sm">Quick Links</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#story" class="hover:text-amber-400 transition">Our Balik Pulau Story</a></li>
+            <li><a href="#why-special" class="hover:text-amber-400 transition">Why It's Good & Fresh</a></li>
+            <li><a href="#four-pillars" class="hover:text-amber-400 transition">The 4 Golden Pillars</a></li>
+            <li><a href="#spiral-anatomy" class="hover:text-amber-400 transition">Spiral Micro-Layers</a></li>
+            <li><a href="#menu-pricing" class="hover:text-amber-400 transition">Box Sets & Pricing</a></li>
+            <li><a href="#reheat-guide" class="hover:text-amber-400 transition">Air Fryer Reheat Guide</a></li>
+          </ul>
+        </div>
+
+        <!-- Operating details -->
+        <div class="space-y-3">
+          <h4 class="font-serif font-bold text-white text-sm">Visit & Order</h4>
+          <p class="text-xs leading-relaxed">
+            Jalan Balik Pulau, 11000 Balik Pulau, Penang Island, Malaysia
+          </p>
+          <p class="text-xs text-stone-300 font-semibold">
+            Tues – Sun: 11:00 AM – 6:30 PM
+          </p>
+          <p class="text-xs text-amber-400">
+            WhatsApp: +60 12-488 9231
+          </p>
+        </div>
+
+      </div>
+
+      <div class="border-t border-stone-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+        <p>&copy; 2026 Nat Home Made Curry Puff. Handcrafted in Balik Pulau, Penang. All rights reserved.</p>
+        <div class="flex items-center gap-4 text-stone-500">
+          <span>Fresh Daily at 170°C</span>
+          <span>•</span>
+          <span>100% Farm Russet Potatoes</span>
+          <span>•</span>
+          <span>No Meat</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FLOATING BOTTOM QUICK ACTION BAR (Mobile & Desktop) -->
+  <div class="fixed bottom-4 left-4 right-4 max-w-lg mx-auto z-40 bg-stone-900/95 backdrop-blur-md text-white rounded-full p-2.5 shadow-2xl border border-amber-600/40 flex items-center justify-between gap-3">
+    <div class="flex items-center gap-2 pl-3">
+      <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+      <div class="text-left">
+        <div class="text-[11px] font-bold text-amber-300 leading-none">Fresh Batch Frying</div>
+        <div class="text-[10px] text-stone-300">170°C Handcrafted Puffs</div>
+      </div>
+    </div>
+    
+    <div class="flex items-center gap-2">
+      <button onclick="playCrunchSound()" class="hidden sm:flex items-center gap-1 px-3 py-1.5 rounded-full bg-stone-800 hover:bg-stone-700 text-amber-300 text-xs font-semibold border border-stone-700 transition">
+        <i data-lucide="volume-2" class="w-3.5 h-3.5"></i>
+        <span>Crunch</span>
+      </button>
+
+      <a href="#order-calculator" class="px-5 py-2 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white text-xs font-bold shadow-md transition flex items-center gap-1.5">
+        <i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i>
+        <span>Order Box (RM 15+)</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- SCRIPT -->
+  <script src="app.js"></script>
+</body>
+</html>
+
